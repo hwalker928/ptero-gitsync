@@ -9,9 +9,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Test script
-        uses: hwalker928/ptero-gitsync@v1.1
+        uses: hwalker928/ptero-gitsync@v0.1
         with:
           example-input: "this is an example"
