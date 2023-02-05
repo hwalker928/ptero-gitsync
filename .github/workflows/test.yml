@@ -12,6 +12,6 @@ jobs:
 
     steps:
       - name: Test script
-        uses: actions/ptero-gitsync@v1.1
+        uses: hwalker928/ptero-gitsync@v1.1
         with:
           who-to-greet: "Mona the Octocat"
