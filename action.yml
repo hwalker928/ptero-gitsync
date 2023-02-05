@@ -1,4 +1,6 @@
 name: "ptero-gitsync"
+icon: "activity"
+color: "purple"
 description: "Used for syncing a GitHub repository with a Pterodactyl® panel"
 inputs:
   panel-url:
