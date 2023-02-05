@@ -19,6 +19,7 @@
   "homepage": "https://github.com/hwalker928/ptero-gitsync#readme",
   "dependencies": {
     "@actions/core": "^1.10.0",
-    "@actions/github": "^5.1.1"
+    "@actions/github": "^5.1.1",
+    "request": "^2.88.2"
   }
 }

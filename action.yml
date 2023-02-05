@@ -1,10 +1,15 @@
-name: "Test Action"
-description: "Example"
+name: "ptero-gitsync"
+description: "Used for syncing a GitHub repository with a Pterodactyl® panel"
 inputs:
-  example-input: # id of input
-    description: "This is an example"
+  panel-url:
+    description: "E.g. https://panel.example.com"
     required: true
-    default: "hello"
+  api-key:
+    description: "Generate this at https://panel.example.com/account/api"
+    required: true
+  server-id:
+    description: "Can be found in the URL when viewing a server"
+    required: true
 runs:
   using: "node16"
   main: "dist/index.js"

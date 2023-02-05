@@ -1,4 +1,4 @@
-name: Test
+name: Test action
 
 on:
   push:
@@ -10,7 +10,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Test script
-        uses: hwalker928/ptero-gitsync@v0.2
+      - name: Restart server
+        uses: hwalker928/ptero-gitsync@v0.3
         with:
-          example-input: "this is an example"
+          panel-url: ${{ secrets.PANEL_URL }}
+          api-key: ${{ secrets.API_KEY }}
+          server-id: ${{ secrets.SERVER_ID }}
