@@ -9,7 +9,7 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - uses: hwalker928/ptero-gitsync@v1
+      - uses: hwalker928/ptero-gitsync@v1.0
         with:
           panel-url: ${{ secrets.PANEL_URL }}
           api-key: ${{ secrets.API_KEY }}
