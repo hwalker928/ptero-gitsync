@@ -14,4 +14,4 @@ jobs:
       - name: Test script
         uses: hwalker928/ptero-gitsync@v1.1
         with:
-          who-to-greet: "Mona the Octocat"
+          example-input: "this is an example"
