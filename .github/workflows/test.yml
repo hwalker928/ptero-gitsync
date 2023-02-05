@@ -1,17 +1,15 @@
-name: Test action
+name: Sync with Panel
 
 on:
   push:
-    branches: ["master"]
-
-  workflow_dispatch:
+    branches:
+      - master
 
 jobs:
-  build:
+  sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Restart server
-        uses: hwalker928/ptero-gitsync@v0.3
+      - uses: hwalker928/ptero-gitsync@v1
         with:
           panel-url: ${{ secrets.PANEL_URL }}
           api-key: ${{ secrets.API_KEY }}
