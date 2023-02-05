@@ -11,6 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Test script
-        uses: hwalker928/ptero-gitsync@v0.1
+        uses: hwalker928/ptero-gitsync@v0.2
         with:
           example-input: "this is an example"
