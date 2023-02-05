@@ -1,0 +1,17 @@
+name: Test
+
+on:
+  push:
+    branches: ["master"]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Test script
+        uses: actions/ptero-gitsync@v1.1
+        with:
+          who-to-greet: "Mona the Octocat"

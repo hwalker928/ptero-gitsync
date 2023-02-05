@@ -1,0 +1,13 @@
+name: "Test Action"
+description: "Example"
+inputs:
+  example-input: # id of input
+    description: "This is an example"
+    required: true
+    default: "hello"
+outputs:
+  exoutput: # id of output
+    description: "The example output"
+runs:
+  using: "node16"
+  main: "index.js"
